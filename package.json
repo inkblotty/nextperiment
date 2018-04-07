@@ -1,0 +1,36 @@
+{
+  "name": "nextperiment",
+  "version": "1.0.0",
+  "description": "a react digestion of a user api using next",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "inkblotty",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "material-ui": "^0.20.0",
+    "next": "^5.1.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-svg-inline": "^2.0.1",
+    "react-tap-event-plugin": "^3.0.2",
+    "react-transition-group": "^2.2.1"
+  },
+  "devDependencies": {}
+}
