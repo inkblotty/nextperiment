@@ -1,6 +1,6 @@
 export function capitalize(str='') {
-  return str && str.length
-    ? str.split(/\s/g).map(word => word[0].toUpperCase().concat(word.slice(1))).join(' ')
+  return str.toString() && str.toString().length
+    ? str.toString().split(/\s/g).map(word => (word && word[0] && word[0].toUpperCase() || '').concat(word.slice(1))).join(' ')
     : ''
 }
 
