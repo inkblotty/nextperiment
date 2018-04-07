@@ -1,0 +1,18 @@
+{
+  "presets": ["env", "next/babel"],
+  "plugins": [
+    'transform-object-rest-spread',
+    'transform-class-properties',
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "components": "./components",
+          "services": "./services",
+          "util": "./util"
+        }
+      }
+    ]
+  ]
+}

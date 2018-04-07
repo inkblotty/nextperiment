@@ -1,0 +1,94 @@
+{
+  "name": "nextperiment",
+  "version": "1.0.0",
+  "description": "a react digestion of a user api using next",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "./node_modules/.bin/eslint './src/**/*.{js,jsx}' './tests/**/*.js' --config ./.eslintrc --fix --ext .js,.jsx --ignore-path ./.eslintignore",
+    "lint-staged": "./node_modules/.bin/eslint --fix --ignore-path ./.eslintignore",
+    "prettify": "node ./scripts/cross-os-prettier.js",
+    "prettify-staged": "prettier --config .prettierrc --write",
+    "test": "./node_modules/.bin/mocha tests/** --compilers js:babel-core/register tests/helpers/virtual-dom.js",
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,scss}": [
+      "npm run prettify-staged",
+      "npm run lint-staged",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
+  },
+  "author": "inkblotty",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "bignumber.js": "^5.0.0",
+    "bloom-forms": "^1.4.0",
+    "bloom-layout": "^1.0.1",
+    "botp": "^2.3.2",
+    "buttercms": "^1.1.0",
+    "clipboard": "^1.7.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "crypto-js": "^3.1.9-1",
+    "css-loader": "^0.28.8",
+    "eslint": "^4.16.0",
+    "eslint-plugin-react": "^7.5.1",
+    "file-loader": "^1.1.6",
+    "history": "^4.6.1",
+    "html-loader": "^0.5.4",
+    "html-webpack-externals-plugin": "^3.6.0",
+    "html-webpack-plugin": "^2.30.1",
+    "immer": "^1.1.0",
+    "material-ui": "^0.20.0",
+    "moment": "^2.18.1",
+    "next": "^5.1.0",
+    "node-sass": "^4.0.0",
+    "postcss-loader": "^2.0.7",
+    "prop-types": "^15.6.0",
+    "qrcode.react": "^0.7.1",
+    "raw-loader": "^0.5.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-helmet": "^5.2.0",
+    "react-hot-loader": "^3.1.3",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.1.1",
+    "react-router-bootstrap": "^0.24.2",
+    "react-router-dom": "^4.2.2",
+    "react-svg-inline": "^2.0.1",
+    "react-tap-event-plugin": "^3.0.2",
+    "react-transition-group": "^2.2.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "husky": "^0.15.0-rc.2",
+    "lint-staged": "^7.0.0",
+    "mocha": "^5.0.1",
+    "prettier": "1.10.2"
+  },
+  "optionalDependencies": {
+    "webpack-dev-server": "^2.10.1"
+  }
+}
