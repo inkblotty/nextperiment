@@ -4,8 +4,8 @@
   "description": "a react digestion of a user api using next",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
     "build": "next build",
+    "dev": "next",
     "start": "next start"
   },
   "author": "inkblotty",
