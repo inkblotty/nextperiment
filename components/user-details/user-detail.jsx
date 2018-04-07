@@ -27,7 +27,6 @@ const locationStyles = {
 
 const UserDetail = ({ details={}, handleClose }) => {
   const { id, location, login, name, picture, ...fields } = details || {}
-  console.log(details)
 
   return (
     <Dialog
