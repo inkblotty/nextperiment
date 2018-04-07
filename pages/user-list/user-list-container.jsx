@@ -65,7 +65,6 @@ class UserListContainer extends React.Component {
   }
 
   render() {
-    console.log(this.state.activeUser)
     return (
       <UserList
         closeUser={this.closeUser}
