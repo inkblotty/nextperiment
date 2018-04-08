@@ -3,9 +3,7 @@
 ### An experiment in Next.js and Material-UI
 
 ### Overview:
-Demo: [nextperiment-ipujvzewlm.now.sh](https://nextperiment-ipujvzewlm.now.sh/)
-
-To start this app locally, run `npm run dev` via the root folder.
+To start this app locally, install packages and run `npm run dev` via the root folder.
 
 
 ## Features:
